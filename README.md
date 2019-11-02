@@ -1,0 +1,1 @@
+# medgrade wp theme 

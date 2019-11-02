@@ -1,0 +1,390 @@
+/* search form in searchform.php: 19-08-2019 */
+#search-form-container {
+	background-color: #f9f9f9;
+	padding: 40px 0;
+}
+#searchform {
+	text-align: center;
+}
+#search-input,
+#search-submit {
+	font-size: 16px;
+}
+#search-input {
+	padding: 15px;
+	margin: 0;
+	box-sizing: border-box;
+	width: 650px;
+	border: 1px #f0f0f0 solid;
+	border-radius: 5px 0 0 5px;
+}
+#search-input-block,
+#search-button-block {
+	display: inline-block;
+	vertical-align:middle;
+}
+#search-submit {
+	padding: 16px 20px 15px 20px;
+	margin: 0;
+	margin-left: -5px;
+	border: 1px #00AE5D solid;
+	border-radius: 0 5px 5px 0;
+	background-color: #00AE5D;
+	color: #fff;
+	cursor: pointer;
+}
+#search-submit:hover {
+	opacity: 0.8;
+}
+#search-list {
+	background-color: #fff;
+	padding: 0;
+	position: absolute;
+	top:50px;
+	left:0;
+	right:0;
+	bottom: auto;
+	z-index:999;
+	margin: 0 auto;
+	width: 650px;
+	text-align: left;
+	border: 1px #f3f3f3 solid;
+}
+#search-list p {
+	padding: 5px 15px;
+	margin: 5px 0;
+}
+#search-list p:hover {
+	text-decoration: underline;
+	cursor: pointer;
+	background-color: #f5f5f5;
+}
+
+/* pagination in search.php: 19-08-2019 */
+.pagination {
+	padding: 0;
+	margin: 0;
+}
+.pagination h2 {
+	text-align: center;
+	text-transform: lowercase;
+}
+.pagination .nav-links {
+	text-align: center;
+}
+.pagination .nav-links .page-numbers {
+	padding: 10px 15px;
+	margin: 0 5px;
+	border: 1px #f3f3f3 solid;
+	border-radius: 50px;
+}
+.pagination .nav-links .current {
+	background-color: #f3f3f3;
+	border: 1px #f3f3f3 solid;
+	
+}
+.pagination .nav-links .next,
+.pagination .nav-links .prev {
+	text-decoration: none;
+	border: 0;
+}
+#page-search h3 {
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+/* add margin-bottom in features in page-home.php: 23-08-2019*/
+.feature .caption {
+	margin-bottom: 1em;
+}
+
+/* highlighting: 26-08-2019 */
+.highlight {
+	background-color: #eee;
+    -moz-border-radius: 3px; /* FF1+ */
+    -webkit-border-radius: 3px; /* Saf3-4 */
+    border-radius: 3px; /* Opera 10.5, IE 9, Saf5, Chrome */
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6); /* FF3.5+ */
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6); /* Saf3.0+, Chrome */
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6); /* Opera 10.5+, IE 9.0 */
+	padding:1px 2px;
+	/*margin:0 -5px;*/
+}
+
+/* to top button: 23-08-2019*/
+#toTop {
+	width:2.3em;
+	background-color: #00AE5D;
+	text-align:center;
+	padding:0.4em 0.2em 0.5em 0.2em;
+	position:fixed;
+	bottom:0.7em;
+	right:1em;
+	cursor:pointer;
+	display:none;
+	color:#fff;
+	font-size:1.7em;
+	opacity: 0.95;
+	z-index: 999;
+	
+	-webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+#toTop:hover {
+	opacity: 0.8;
+}
+
+#page-home .banners-desktop .img {	/* fix banner size (default=451) + important */
+	height: 590px !important;/*538px*/
+}
+
+/* баннеры на главной - две версии banners-box-desktop и banners-box-mobile */
+/*.banners-box-desktop {
+	display: block;
+}*/
+#page-home .banners-box-mobile {
+	display: none;
+}
+#page-home .banners-box-mobile .img {
+	margin:0;
+	padding:0;
+}
+#page-home .banners-box-mobile .banners-mobile .img a {
+	left:50%;
+	right:auto;
+	bottom: 50px;
+	margin:0;
+	margin-left: -57px;
+	/*margin-top: -50px;*/
+}
+#page-home .banners-box-mobile .banners-mobile .img img {
+	width:100%;
+	height:auto;
+}
+
+/* перебиваем стили на странице товара 15-09-19 */
+
+#page-product .second-column {
+	/*border: 1px #f0f0f0 solid;*/
+	width: 100%;
+	padding: 30px;
+	/*margin-left: 30px;*/
+}
+#page-product .second-column h4 {
+	margin: 2em 0;
+}
+/* табы на страницах товара */
+#page-product .second-column .tabs {
+	border-top: 1px #f5f5f5 solid;
+	padding: 30px 0;
+}
+#page-product .second-column .tabs .tabs-nav ul li {
+	cursor: pointer;
+}
+#page-product .second-column .tabs .tabs-nav ul li:hover {
+	text-decoration: underline;
+}
+#page-product .second-column .tabs .tabs-nav ul li.active {
+	/*color: #00ae5d;*/
+	background-color: #fff;
+	border: 1px #ccc solid;
+	border-bottom: 1px #fff solid;
+}
+#page-product .second-column .tabs .tabs-nav ul li {
+	display: inline-block;
+}
+#page-product .second-column .tabs .tab {
+	display: none;
+}
+#page-product .second-column .tabs .tab.active {
+	display: block;
+}
+#page-product .second-column .tabs .tab .tab-content {
+	border-top: 1px #fff solid;
+	border-bottom: 1px #fff solid;
+	box-shadow: 0 8px 12px rgba(0,0,0,0.09);
+	padding: 1.5em;
+}
+#page-product .second-column .tabs .tab .tab-content.overflow-hidden {
+	height: 530px;
+	overflow: hidden;
+}
+/*#page-product .second-column .tabs .tab .tab-content h4 {
+	display: none;
+}*/
+#page-product .second-column .tabs .tab button {
+	display: block;
+	margin: 0 auto;
+	background-color: #fff;
+	color: #00ae5d;
+	border: 1px #f0f0f0 dotted;
+	border-top: 3px #fff solid;
+	box-shadow: 0 8px 12px rgba(0,0,0,0.09);
+	margin-top: -2px;
+	padding-top: 0.2em;
+	padding-bottom: 0.4em;
+}
+#page-product .second-column .tabs .tab button:hover {
+	background-color: #f7f7f7;
+	text-decoration: underline;
+}
+#page-product .second-column ul {
+	list-style-type: none;
+}
+#page-product .second-column ul li {
+	border: 1px #f5f5f5 solid;
+	background-color: #f9f9f9;
+	padding: 10px 20px;
+}
+#page-product .second-column .tabs .tab .tab-content ul li {
+	margin-bottom:1.6em;
+}
+
+/* one-click-order-form : 08-10-2019 */
+#page-product .info-icons {
+    display: inline-block;
+	vertical-align: top;
+	width:35%;
+}
+.one-click-order-form-container {
+	background-color: #fff;
+	padding: 1em 1em 1em 0;
+	padding-left:2em;
+	margin: 0 0 2em 0;
+	text-align: left;
+	display: inline-block;
+	vertical-align: top;
+	width:64%;
+	border: 1px #eee solid;
+	box-shadow: 3px 6px 3px rgba(0,0,0,0.05);
+}
+.one-click-order-form-container:hover {
+	box-shadow: 3px 8px 3px rgba(0,0,0,0.08);
+}
+#one-click-order-form {
+	padding:0;
+	margin:0;
+}
+#one-click-order-form input[type="text"],
+#one-click-order-form button[type="submit"] {
+	font-size: 16px;
+	display: inline-block;
+	vertical-align: top;
+}
+#one-click-order-form input[type="text"] {
+	padding: 12px;
+	margin: 0;
+	box-sizing: border-box;
+	width: 65%;
+	border: 1px #f0f0f0 solid;
+	/*border-radius: 5px 0 0 5px;*/
+}
+#one-click-order-form button[type="submit"] {
+	padding: 13px 18px 12px 18px;
+	margin: 0;
+	margin-left: -4px;
+	border: 1px #00AE5D solid;
+	/*border-radius: 0 5px 5px 0;*/
+	background-color: #00AE5D;
+	color: #fff;
+	cursor: pointer;
+}
+#one-click-order-form button[type="submit"]:hover {
+	opacity: 0.8;
+}
+
+.hidden {
+	display:none;
+}
+
+/*
+	адаптив
+
+	26-11-18	вкл/откл отображение первой колонки на мобильных
+	23-08-19	адаптив для поиска по сайту - #search-input, #search-list, #search-submit
+	01.09.19	вкл-откл слайдеров для десктоп и мобильной версий
+*/
+
+@media (max-width:991px) {
+	#search-input {
+		padding: 15px;
+		width: 380px;
+		border-radius: 5px;
+	}
+	#search-list {
+		width: 380px;
+	}
+	#search-submit {
+		display: none;
+	}
+}
+@media (max-width:767px) {
+	.hide-mobile {
+		display: none;
+	}
+	.show-mobile {
+		display: inline-block;
+	}
+	#page-home .banners-box-desktop {
+		display: none;
+	}
+	#page-home .banners-box-mobile {
+		display: block;
+	}
+	#page-home .banners-box-mobile .banners-mobile .img a {
+		bottom: 50px;
+		margin-left: 90px;
+	}
+	#page-home .banners-box-mobile .banners-mobile .slick-dots {
+		bottom: -20px;
+	}
+}
+
+@media (min-width:768px) {
+	.hide-mobile {
+		display: inline-block;
+	}
+	.show-mobile {
+		display: none;
+	}
+}
+@media (max-width:543px) {
+	#search-input {
+		width: 310px;
+	}
+	#search-list {
+		width: 310px;
+	}
+	#page-home .banners-box-mobile .banners-mobile .img a {
+		bottom: 50px;
+		margin-left: -57px;
+	}
+	#page-home .banners-box-mobile .banners-mobile .slick-dots {
+		bottom: 0;
+	}
+	#page-product .info-icons {
+		display: block;
+		width:auto;
+	}
+	.one-click-order-form-container {
+		text-align: center;
+		display: block;
+		width:auto;
+	}
+	#one-click-order-form input[type="text"],
+	#one-click-order-form button[type="submit"] {
+		font-size: 14px;
+		display: inline-block;
+		vertical-align: top;
+	}
+	#one-click-order-form input[type="text"] {
+		padding: 8px;
+		width: auto;
+	}
+	#one-click-order-form button[type="submit"] {
+		padding: 12px 16px 11px 16px;
+
+		margin-left: -4px;
+	}
+}
