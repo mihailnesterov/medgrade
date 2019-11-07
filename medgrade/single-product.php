@@ -101,7 +101,7 @@ get_header();
         <div class="one-click-order-form-container -hidden">
           <form id="one-click-order-form" method="POST" action="">
             <h5 style="color: #00AE5D; font-size:1.4em;margin-bottom:0.4em;">Заказ в 1 клик</h5>
-            <input type="text" id="one-click-order-input" name="one-click-order-input" placeholder="Введите номер телефона..." class="order-input"/>
+            <input type="text" id="one-click-order-input" name="one-click-order-input" placeholder="Введите номер телефона..." class="order-input" required/>
             <button type="submit" class="btn" id="one-click-order-submit-btn" name="one-click-order-submit-btn">Получить КП</button>
             <div class="form-footer" style="margin: 1em 0;">
               <input type="checkbox" id="form-privacy" checked="">
